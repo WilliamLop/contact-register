@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Register</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="font-vietnam min-h-screen bg-img">
+
+    <!-- HEADER -->
+    <header class="py-4 relative w-full">
+        <div class="max-container">
+            <figure>
+                <img src="images/contact-form-icon.svg" alt="" class="">
+            </figure>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="mt-6">
+        <div class="mx-auto w-[90%] xl:max-w-[700px] grid gap-6">
+            <div class="text-center text-veryLigth/80 grid gap-8">
+                <h1 class="text-6xl font-semibold leading-tight lg:text-[50px]
+                w-[550px] mx-auto">
+                    Interested in our business pricing?</h1>
+
+                <p class=" w-[470px] mx-auto text-2xl leading-tight lg:text-xl xl:text-2xl">
+                    Fill out the form to view details and we’ll contact you as soon as possible.
+                </p>
+            </div>
+
+            <form action="" class="bg-desaturedGray/30 pb-24 lg:pb-8 px-8 py-8 grid gap-4 my-6 rounded-3xl"
+            id="form">
+                <!-- Contact -->
+                <div class="grid gap-5 lg:grid-cols-2">
+                    <div class="grid">
+                        <label for="nombre" class="label">Name</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ethan Jhonson" class="input
+                        focus:outline-none focus:border-cyan-500 border border-slate-300" required>
+                        <p id="text-error" class="text-red-800 font-bold hidden">❌ Please provide a name</p>
+                    </div>
+                    <div class="grid">
+                        <label for="email" class="label">Company Email</label>
+                        <input type="email" name="email" id="email" placeholder="ethan@johnson.com" class="input
+                        focus:outline-none focus:border-cyan-500 border border-slate-300" required>
+                        <p id="text-error" class="text-red-800 font-bold hidden">❓ Please provide a email valid</p>
+                    </div>
+                </div>
+                <!-- Select -->
+                <div class="grid gap-5 lg:grid-cols-2 box-border">
+                    <div class="grid">
+                        <label for="company" class="label">Company Size</label>
+                        <select name="company" id="company" class="input
+                        focus:outline-none focus:border-cyan-500 border border-slate-300
+                        cursor-pointer hover:bg-slate-100 duration-300 ease-in-out hover:border
+                        hover:border-violet-400" required>
+                            <option value="">Select company size</option>
+                            <option value="50-100">50-100 employees</option>
+                            <option value="100-1000">50-100 employees</option>
+                        </select>
+                        <p id="text-error" class="text-red-800 font-bold hidden">👆 Please one select</p>
+                    </div>
+                    <div class="grid">
+                        <label for="email" class="label">Subject</label>
+                        <select name="company" id="company" class="input
+                        focus:outline-none focus:border-cyan-500 border border-slate-300
+                        cursor-pointer hover:bg-slate-100 duration-300 ease-in-out hover:border-violet-400"
+                        required>
+                            <option value="">Select subject</option>
+                            <option value="ladingpages">Building Landing pages</option>
+                            <option value="spa">Building single page aplication</option>
+                        </select>
+                        <p id="text-error" class="text-red-800 font-bold hidden">👆 Please one select</p>
+                    </div>
+                </div>
+                <!-- Area -->
+                <div class="grid">
+                    <label for="message" class="label">Message</label>
+                    <textarea name="message" id="message" cols="40" rows="10" class="mt-1 rounded-2xl
+                    focus:outline-none focus:border-cyan-500 border border-slate-300 py-4 px-6
+                    font-bold " placeholder="50-100 employees"></textarea>
+                </div>
+
+                <input type="submit" value="Contact Sales" class="bg-veryWhite text-veryBlue
+                py-4 rounded-2xl text-center font-bold text-lg mt-4 cursor-pointer hover:bg-violet-500
+                hover:text-veryLigth duration-300 ease-in-out" id="enviar">
+            </form>
+        </div>
+    </main>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
